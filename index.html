@@ -28,47 +28,367 @@
 <body>
   <section class="wrap">
     <section class="skip_menu">
-      <p><a href="#content">본문 바로가기</a></p>
+      <a href="#content">본문 바로가기</a>
     </section>
     <header class="header">
       <h1 class="logo">
         <a href="index.html">
           <img src="images/logo.webp" alt="logo">
         </a>
+        <ul id="tgl_nav_btn">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </h1>
       <nav class="nav">
-        <article class="article small_nav content">
-          <ul>
-            <li><a href="#">기아소식</a></li>
-            <li><a href="#">IR</a></li>
-            <li><a href="#">UVO</a></li>
-            <li><a href="#">WORLDWIDE</a></li>
-            <li><a href="#">EN</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">마이기아</a></li>
-            <li><a href="#">검색</a></li>
-          </ul>
+        <article class="article small_nav">
+          <div class="content">
+            <ul>
+              <li><a href="#">기아소식</a></li>
+              <li><a href="#">IR</a></li>
+              <li><a href="#">UVO</a></li>
+              <li><a href="#">WORLDWIDE</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+            <ul>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">마이기아</a></li>
+              <li class="search"></li>
+            </ul>
+          </div>
         </article>
-        <article class="article large_nav content">
-          <ul>
-            <li><a href="#">차량</a></li>
-            <li><a href="#">구매정보</a></li>
-            <li><a href="#">체험센터</a></li>
-            <li><a href="#">이벤트</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">PLAY KIA</a></li>
-            <li><a href="#">레드멤버스</a></li>
-            <li><a href="#">기업문화홍보</a></li>
-            <li><a href="#">인재채용</a></li>
-            <li><a href="#">고객센터</a></li>
-          </ul>
+        <article class="article large_nav">
+          <div class="content">
+            <ul>
+              <li id="nav_list01">
+                <a class="nav_btn" href="#nav_list01" id="car_show">차량</a>
+                <ul class="car_list content">
+                  <li>
+                    <p>
+                      <input type="radio" name="car" id="car_all">
+                      <label for="car_all">전체</label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_people">
+                      <label for="car_people">승용</label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_nature">
+                      <label for="car_nature">친환경</label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_rv">
+                      <label for="car_rv">RV</label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_other">
+                      <label for="car_other">상용/택시/버스</label>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <img src="images/img_morning.webp" alt="morning">
+                      <span>모닝</span>
+                    </p>
+                    <p>
+                      <img src="images/img_ray.webp" alt="ray">
+                      <span>레이</span>
+                    </p>
+                    <p>
+                      <img src="images/img_k3.png" alt="k3">
+                      <span>K3</span>
+                    </p>                  
+                    <p>
+                      <img src="images/img_k3gt.webp" alt="k3gt">
+                      <span>K3 GT</span>
+                    </p>
+                    <p>
+                      <img src="images/img_dl3k5.webp" alt="k5">
+                      <span>K5</span>
+                    </p>
+                    <p>
+                      <img src="images/img_k5_hybrid.webp" alt="k5hybrid">
+                      <span>K5 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/img_k7.webp" alt="K7">
+                      <span>K7 </span>
+                    </p>
+                    <p>
+                      <img src="images/img_k7_hybrid.webp" alt="k7hybrid">
+                      <span>K7 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/img_stinger.png" alt="stinger">
+                      <span>스팅어</span>
+                    </p>
+                    <p>
+                      <img src="images/img_thek9.webp" alt="thek9">
+                      <span>더 K9</span>
+                    </p>
+                    <p>
+                      <img src="images/img_stonic.png" alt="stonic">
+                      <span>스토닉</span>
+                    </p>
+                    <p>
+                      <img src="images/car_soulbooster_ah5.webp" alt="soul">
+                      <span>쏘울</span>
+                    </p>
+                    <p>
+                      <img src="images/car_soulbooster_ev_se2.webp" alt="soul_ev">
+                      <span>쏘울 EV</span>
+                    </p>
+                    <p>
+                      <img src="images/img_niro.webp" alt="niro">
+                      <span>니로</span>
+                    </p>
+                    <p>
+                      <img src="images/img_niro-phev.webp" alt="nirohybrid">
+                      <span>니로 플러그인 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/img_niro-ev.webp" alt="niro_ev">
+                      <span>니로 EV</span>
+                    </p>
+                    <p>
+                      <img src="images/img_seltos.webp" alt="seltos">
+                      <span>셀토스</span>
+                    </p>
+                    <p>
+                      <img src="images/img_sportageql.png" alt="sportage">
+                      <span>스포티지</span>
+                    </p>
+                    <p>
+                      <img src="images/img_4thgensorento.webp" alt="sorento">
+                      <span>쏘렌토</span>
+                    </p>
+                    <p>
+                      <img src="images/img_mohave.webp" alt="mohave">
+                      <span>모하비</span>
+                    </p>
+                    <p>
+                      <img src="images/img_carnival.webp" alt="carnival">
+                      <span>카니발</span>
+                    </p>
+                    <p>
+                      <img src="images/img_carnival_hi_limousine.webp" alt="carnival_hi_limousine">
+                      <span>카니발 하이리무진</span>
+                    </p>
+                    <p>
+                      <img src="images/img_carnival_outdoor.webp" alt="carnival_outdoor">
+                      <span>카니발 아웃도어</span>
+                    </p>
+                    <p>
+                      <img src="images/img_newk5_taxi.webp" alt="k5_taxi">
+                      <span>K5 택시</span>
+                    </p>
+                    <p>
+                      <img src="images/img_2017k7_taxi.webp" alt="k7 택시">
+                      <span>K7 택시</span>
+                    </p>
+                    <p>
+                      <img src="images/img_new_granbird.webp" alt="new_granbird">
+                      <span>뉴그랜버드</span>
+                    </p>
+                    <p>
+                      <img src="images/img_truck.webp" alt="truck">
+                      <span>봉고ΙΙΙ트럭</span>
+                    </p>
+                    <p>
+                      <img src="images/img_bongo3-ev.webp" alt="bongo3_ev">
+                      <span>봉고ΙΙΙ EV</span>
+                    </p>
+                    <p>
+                      <img src="images/img_top_car.webp" alt="top_car">
+                      <span>탑차</span>
+                    </p>
+                    <p>
+                      <img src="images/img_construc.png" alt="construc">
+                      <span>건설</span>
+                    </p>
+                    <p>
+                      <img src="images/img_construct_sung.webp" alt="construct_sung">
+                      <span>성력</span>
+                    </p>
+                    <p>
+                      <img src="images/img_transport.webp" alt="transport">
+                      <span>수송</span>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav_list02">
+                <a class="nav_btn" href="#nav_list02">구매정보</a>
+                <ul class="sub_nav content">
+                  <li><a href="#">온라인견적</a></li>
+                  <li><a href="#">상품추천</a></li>
+                  <li><a href="#">경쟁차비교</a></li>
+                  <li><a href="#">카탈로그/가격표 다운로드</a></li>
+                  <li><a href="#">이달의구매혜택</a></li>
+                  <li><a href="#">영업망안내</a></li>
+                  <li><a href="#">구매상담신청</a></li>
+                  <li><a href="#">구매가이드</a></li>
+                  <li><a href="#">친환경 전기차 구매가이드</a></li>
+                  <li><a href="#">기아렌터카 +</a></li>
+                  <li><a href="#">기아플렉스</a></li>
+                </ul>
+              </li>
+              <li id="nav_list03">
+                <a class="nav_btn" href="#nav_list03">체험센터</a>
+                <ul class="sub_nav content">
+                  <li><a href="#">시승예약서비스</a></li>
+                  <li><a href="#">전시차 조회</a></li>
+                  <li><a href="#">사업장 안내</a></li>
+                </ul>
+              </li>
+              <li id="nav_list04">
+                <a class="nav_btn" href="#nav_list04">이벤트</a>
+                <ul class="sub_nav content">
+                  <li><a href="#">진행중인 이벤트</a></li>
+                  <li><a href="#">종료 이벤트</a></li>
+                  <li><a href="#">당첨자발표</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="#">PLAY KIA</a></li>
+              <li><a href="#">레드멤버스</a></li>
+              <li><a href="#">기업문화홍보</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
         </article>
       </nav>
     </header>
+    <section class="main_banner">
+      <article class="swiper-container main_slider">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider01.webp" alt="main_slider01">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider01_tit.webp" alt="main_slider01_tit">
+                <h2>도심 주행이 즐거워진 시티 모빌리티</h2>
+                <a href="#">모닝 어반</a>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider02.jpg" alt="main_slider02">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider02_tit.webp" alt="main_slider02_tit">
+                <h2 class="color_white">새로운 시대의 라이프 플랫폼</h2>
+                <a class="color_white" href="#">4세대 쏘렌토</a>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider03.webp" alt="main_slider03">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider03_tit.webp" alt="main_slider03_tit">
+                <h2 class="color_white">복잡한 도시 환경에 최적화된 친환경 전기 트럭</h2>
+                <a class="color_white" href="#">BONGO ΙΙΙ EV</a>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider04.webp" alt="main_slider04">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider04_tit.webp" alt="main_slider04_tit">
+                <h2 class="color_white">10년의 헤리티지로 담아낸 품격<br> X 에디션</h2>
+                <a class="color_white" href="#">K7 Premier</a>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_slider_img">
+              <img src="images/main_slider05.webp" alt="main_slider05">
+            </div>
+            <div class="main_slider_txt">
+              <img src="images/main_slider05_tit.webp" alt="main_slider05_tit">
+              <h2>더 큰 나를 만나다, 모하비 더 마스터</h2>
+              <a href="#">모하비 더 마스터</a>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider06.jpg" alt="main_slider06">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider06_tit.webp" alt="main_slider06_tit">
+                <h2 class="color_white">하이클래스 소형SUV, SELTOS</h2>
+                <a class="color_white" href="#">셀토스</a>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider07.webp" alt="main_slider07">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider07_txt.webp" alt="main_slider07_tit">
+                <h2 class="color_white">럭셔리를 넘어선 프리미엄 세단의 기준과 가치</h2>
+                <a class="color_white" href="#">THE K9</a>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="main_box">
+              <div class="main_slider_img">
+                <img src="images/main_slider08.webp" alt="main_slider08">
+              </div>
+              <div class="main_slider_txt">
+                <img src="images/main_slider08_tit.webp" alt="main_slider08_tit">
+                <h2>성공적인 자영업을 위한 오너 맞춤형 트럭</h2>
+                <a href="#">THE NEW BONGO ΙΙΙ</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="start_stop_btn">
+          <button type="button" id="start_btn">재생</button>
+          <button type="button" id="stop_btn">정지</button>
+        </div>
+      </article>
+      <article class="quick_nav_box">
+        <ul class="quick_nav">
+          <li class="quick_list01">
+            <p>온라인 견적</p>
+          </li>
+          <li class="quick_list02">
+            <p>구매 상담</p>
+          </li>
+          <li class="quick_list03">
+            <p>이달의 구매혜택</p>
+          </li>
+          <li class="quick_list04">
+            <p>시승 신청</p>
+          </li>
+          <li class="quick_list05">
+            <p>카탈로그/가격표</p>
+          </li>
+        </ul>
+      </article>
+    </section>
   </section>
 </body>
 </html>
