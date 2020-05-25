@@ -3,6 +3,10 @@
 
 /* pc 960이상 */
 body{font-family:'Gothic A1',sans-serif;}
+h2{font-weight:bolder;font-size:xx-large;text-align:center;}
+h3{font-size:x-large;}
+.wrap>section{padding:50px 0;}
+
 .content{width:93.75%;max-width:1400px;margin:0 auto;}
 .color_black{color:#000;}
 .color_white{color:#fff;}
@@ -82,8 +86,12 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
 .car_list.active>li:last-child>p{animation-name:car_rotate;animation-duration:0.3s;}
 .car_list>li:last-child>p>span{font-weight:bold;font-size:medium;}
 
+
+
+
 .main_banner{position:relative;}
 .main_box{position:relative;}
+.main_slider_img{display:flex;justify-content:center;align-items:center;}
 .main_slider_txt{position:absolute;left:0;top:0;display:flex;flex-flow:column nowrap;justify-content:space-evenly;align-items:center;width:100%;padding-top:30px;}
 .main_slider_txt>h2{margin:25px 0 30px;font-size:xx-large;font-weight:600;text-align:center;text-shadow:1px 1px 5px #fff;}
 .main_slider_txt>h2.color_white{text-shadow:1px 1px 5px #000;}
@@ -123,7 +131,46 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
 .quick_nav>li>p{font-size:16px;padding-top:3px;}
 .quick_nav>li:hover>p{color:#fff;}
 
+.best_kia{margin-top:170px;}
+h2>span{font-size:xx-large;color:#d70f26;}
+.best_kia>.best_kia_slider{padding-bottom:60px;}
+.best_kia_slider_txt>h3{font-weight:500;font-size:x-large;text-align:center;margin-bottom:5px;}
+.best_kia_slider_img>img{width:100%;}
+.best_kia_slider_txt>p{text-align:center;}
+.best_kia_slider_txt>p>span{letter-spacing:-1px;}
+.best_kia_slider_txt>p>span:nth-child(1){color:#d70f26;}
+.best_kia_slider_txt>p>span:nth-child(2n+1){padding:0 2px;}
+.best_kia_slider_txt>p>span:nth-child(2n){display:inline-block;text-indent:-99999999999px;width:1px;background-color:rgba(0,0,0,0.2);}
+.best_kia .swiper-container-horizontal>.swiper-pagination-bullets{bottom:0;}
+.best_kia .swiper-pagination-bullet{background-color:#999;}
+.best_kia .swiper-pagination-bullet-active{background-color:#d70f26;}
+.best_kia .swiper-button-prev,.best_kia .swiper-button-next{color:#999;}
+.best_kia .swiper-button-prev{left:6%;}
+.best_kia .swiper-button-next{right:6%;}
+.best_kia .swiper-slide img{opacity:0.5;transition:0.5s;}
+.best_kia .swiper-slide-active img{transform:scale(1.2);opacity:1;}
+.best_kia .swiper-slide-prev img,.best_kia .swiper-slide-next img{opacity:1;}
+.best_kia .swiper-slide-prev img:hover,.best_kia .swiper-slide-next img:hover{transform:scale(1.1);}
 
+.wrap>.event_channel{display:flex;flex-flow:row nowrap;justify-content:space-between;padding-left:7%;padding-right:3%;}
+.event_channel>.event_kia{width:50%;}
+.event_channel>.channel_kia{width:40%;margin-top:100px;}
+.event_kia>h2,.channel_kia>h2{text-align:left;}
+.event_channel h3{padding:20px 0;}
+.event_channel img{width:100%;}
+.event_kia_slider_txt>p>span:nth-child(1){font-weight:600;}
+.channel_kia_slider_txt>h3{display:flex;flex-flow:row nowrap;justify-content:left;align-items:center;}
+.channel_kia_slider_txt>h3>span{display:inline-block;border:1px solid #000;padding:6px 10px;margin-right:10px;}
+.event_kia .swiper-pagination-fraction,.event_kia .swiper-pagination-custom,.event_kia .swiper-container-horizontal>.swiper-pagination-bullets{bottom:170px;}
+.channel_kia .swiper-pagination-fraction,.channel_kia .swiper-pagination-custom,.channel_kia .swiper-container-horizontal>.swiper-pagination-bullets{bottom:90px;}
+.event_channel .swiper-pagination-bullet{width:12px;height:12px;margin:0 6px !important;border-radius:6px;border:1px solid #333}
+.event_channel .swiper-pagination-bullet-active{background-color:#d70f26;width:35px;}
+
+.youtube{display:flex;flex-flow:row wrap;justify-content:space-between;}
+.youtube>h2{width:100%;text-align:left;}
+.youtube>.youtube_link{width:66.640625%;height:37.5vw;}
+.youtube>.youtube_link>iframe{width:100%;height:100%;}
+.youtube>.youtube_txt{width:30%;padding:0 5%;}
 
 
 
@@ -141,6 +188,9 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
 }
 /* tablet 960px */
 @media(max-width:959px){
+  h2{font-size:x-large;}
+  h3{font-size:large;}
+  h2>span{font-size:x-large;}
   .logo{left:7%;}
   .header .article.large_nav>.content,.header .article.large_nav>.content>ul{justify-content:flex-end;}  
   .large_nav>.content>ul:first-child>li{padding:19px 10px;}
@@ -151,10 +201,11 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
   .sub_nav>li{width:33.33333%;}
   .quick_nav>li{width:150px;height:120px;}
   .quick_nav>li>p{font-size:14px;}
-  .swiper-pagination{display:none;}
 }
 /* 770px */
 @media(max-width:769px){
+  h2{font-size:large;}
+  h2>span{font-size:large;}
   .header::before{display:block;}
   .logo{position:static;width:100%;background-color:#000;left:0;padding:10px;transform:translateX(0);}
   .logo #tgl_nav_btn{display:flex;}
@@ -179,8 +230,10 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
   .sub_nav>li{width:100%;border-bottom:1px solid #f0f0f0;padding:15px 0;}
   .sub_nav>li a{font-weight:700 !important;}
   .swiper-button-prev,.swiper-button-next{display:none;}
+  .channel_kia .swiper-button-prev,.channel_kia .swiper-button-next,.event_channel .swiper-button-prev,.event_channel .swiper-button-next{display:block;}
   .main_slider_txt>h2{font-size:large;}
   .main_slider_txt>a{font-size:small;}
+  .main_slider_img>img{width:150%;}
   .quick_nav_box{width:90%;}
   .quick_nav_box>.quick_nav{flex-flow:row wrap;}
   .quick_nav_box>.quick_nav>li{width:50%;height:50px;flex-flow:row nowrap;}
@@ -188,10 +241,26 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
   .quick_nav_box>.quick_nav>li::before{width:25px;height:25px;background-size:125px 50px;}
   .quick_nav_box>.quick_nav>li:hover::before{background-position-y:-25px;}
   .quick_nav_box>.quick_nav>li>p{font-size:small;}
+  .quick_nav>li.quick_list02::before{background-position:-25px 0;}
+  .quick_nav>li.quick_list03::before{background-position:-50px 0;}
+  .quick_nav>li.quick_list04::before{background-position:-75px 0;}
+  .quick_nav>li.quick_list05::before{background-position:-100px 0;}
+  .wrap>.event_channel{flex-flow:row wrap;justify-content:center;padding-left:3%;}
+  .event_channel>.event_kia{width:100%;}
+  .event_channel>.channel_kia{width:100%;}
+
 }
-/* mobile 639px */
+/* mobile 640px */
 @media(max-width:639px){
   .car_list>li:last-child>p{width:45%;}
+  .main_slider_txt>h2{font-size:medium;}
+  .main_slider_txt>a{font-size:x-small;}
+  .quick_nav_box>.quick_nav>li>p{font-size:x-small;}
+}
+
+/* 480px */
+@media(max-width:479px){
+  .main_slider_txt>h2{font-size:small;margin:14px 0;}
 }
 /* 360px */
 @media(max-width:360px){

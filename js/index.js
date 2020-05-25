@@ -55,7 +55,7 @@ $(function(){
   });
 
   // main slider
-  var mySwiper= new Swiper('.swiper-container',{
+  var mySwiper= new Swiper('.main_slider',{
     speed:1000,
     effect:'fade',
     loop:true,
@@ -65,7 +65,7 @@ $(function(){
       // dynamicBullets:true,
     },
     navigation:{
-      nextEl: '.swiper-button-next',
+      nextEl:'.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     autoplay:{
@@ -84,6 +84,65 @@ $(function(){
     $('#start_btn').show();
     mySwiper.autoplay.stop();
   });
-  
-  
+
+    // best kia slider
+    var mySwiper2= new Swiper('.best_kia_slider',{
+      speed:300,
+      spaceBetween:0,
+      slidesPerView:1.5,
+      centeredSlides:true,
+      loop:true,
+      autoplay:{
+        delay:3000,
+      },
+      navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
+      },
+      pagination:{
+        el:'.swiper-pagination',
+      },
+      breakpoints:{
+        // when window width is >= 770px
+        770:{
+          slidesPerView:3.5,
+        },
+      },
+    });
+    // event kia slider
+    var mySwiper3= new Swiper('.event_kia_slider',{
+      speed:300,
+      // spaceBetween:0,
+      slidesPerView:1,
+      centeredSlides:true,
+      loop:true,
+      autoplay:{
+        delay:3000,
+      },
+      navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
+      },
+      pagination:{
+        el:'.swiper-pagination',
+      },
+    });
+    // channel kia slider
+    var mySwiper4= new Swiper('.channel_kia_slider',{
+      speed:300,
+      // spaceBetween:0,
+      slidesPerView:1,
+      centeredSlides:true,
+      loop:true,
+      autoplay:{
+        delay:3000,
+      },
+      navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
+      },
+      pagination:{
+        el:'.swiper-pagination',
+      },
+    });
 });
