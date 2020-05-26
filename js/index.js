@@ -135,6 +135,24 @@ $(function(){
       centeredSlides:true,
       loop:true,
       autoplay:{
+        delay:5000,
+      },
+      navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
+      },
+      pagination:{
+        el:'.swiper-pagination',
+      },
+    });
+    // kia news slider
+    var mySwiper5= new Swiper('.kia_news_slider',{
+      speed:300,
+      spaceBetween:10,
+      slidesPerView:2.5,
+      // centeredSlides:true,
+      loop:true,
+      autoplay:{
         delay:3000,
       },
       navigation:{
@@ -144,5 +162,16 @@ $(function(){
       pagination:{
         el:'.swiper-pagination',
       },
+    });
+
+    // footer tgl btn
+    $('#footer_tgl_btn').click(function(){
+      $('#footer_tgl_btn>ul').toggleClass('active');
+    });
+
+    $('#footer_tgl_btn>ul>li').click(function(){
+      var selectValue=$(this).children('a').text();
+      $('#footer_tgl_btn>span').text(selectValue);
+
     });
 });
