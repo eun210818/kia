@@ -90,7 +90,7 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform:rotate(-45deg);}
 
 
 
-.main_banner{position:relative;}
+.main_banner{position:relative;padding-top:0 !important;}
 .main_box{position:relative;}
 .main_slider_img{display:flex;justify-content:center;align-items:center;}
 .main_slider_txt{position:absolute;left:0;top:0;display:flex;flex-flow:column nowrap;justify-content:space-evenly;align-items:center;width:100%;padding-top:30px;}
@@ -223,19 +223,26 @@ h2>span{font-size:xx-large;color:#d70f26;}
 #footer_tgl_btn>ul.active{height:200px;border:1px solid rgba(255,255,255,0.5);}
 #footer_tgl_btn>ul>li{text-align:center;}
 
-.footer_middle{display:flex;flex-flow:row nowrap;padding:30px 0;}
+.footer_middle,.footer_bottom{display:flex;flex-flow:row nowrap;padding:30px 0;}
 .footer_middle h5{font-size:medium;padding-bottom:6px;}
 .footer_middle li{padding:3px 0;}
 .footer_middle_left{flex:40;display:flex;flex-flow:row wrap;}
 .service{flex:2;}
+.service a{color:rgba(255,255,255,0.6);}
 .info{flex:3;}
+.info li{font-weight:400;color:rgba(255,255,255,0.6);}
 .footer_middle_right{flex:60;}
 .award{display:flex;flex-flow:row wrap;}
 
 .award>h5{width:100%;}
 .award>li{width:50%;display:flex;flex-flow:row nowrap;padding:8px 0;}
+.award>li>p{color:rgba(255,255,255,0.7);}
 .award>li>p:nth-child(1){margin-right:6px;}
 .award>li>p:nth-child(2){display:flex;align-items:center;}
+.footer_bottom{display:flex;}
+.footer_bottom_left{padding-right:50px;order:1;}
+.footer_bottom_right{order:2;display:flex;}
+.footer_bottom_right>p{padding:0 10px;}
 
 
 
@@ -295,10 +302,11 @@ h2>span{font-size:xx-large;color:#d70f26;}
   .event_kia .swiper-pagination-fraction, .event_kia .swiper-pagination-custom, .event_kia .swiper-container-horizontal>.swiper-pagination-bullets{bottom:160px;}
   .youtube>.youtube_link{top:90px;}
 
-  .footer_middle_left{flex:2;}
   .service,.info{flex:initial;}
-  .footer_middle_right{flex:8;}
   .service{padding-bottom:20px;}
+  .footer_middle_left{flex:2;}
+  .footer_middle_right{flex:8;}
+  .footer_bottom_left{padding-right:20px;}
 }
 /* 770px */
 @media(max-width:769px){
@@ -362,6 +370,11 @@ h2>span{font-size:xx-large;color:#d70f26;}
 
   .footer_top_right{display:none;}
   .footer_middle{display:none;}
+  .footer_bottom{flex-flow:column;}
+  .footer_bottom::after{content:'한국';display:inline-block;color:#fff;padding-left:40px;background:url('../images/img_kor.jpg') no-repeat;background-size:contain;order:2;cursor:pointer;font-weight:bold;margin-bottom:30px;}
+  .footer_bottom_left{order:3;}
+  .footer_bottom_right{order:1;flex-flow:row wrap;margin-bottom:20px;}
+  .footer_bottom_right>p{width:50%;padding:10px 0;}
   
 }
 /* mobile 640px */
